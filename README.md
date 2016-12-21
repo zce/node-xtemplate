@@ -34,7 +34,7 @@ $ npm install --save node-xtemplate
 
 demo.xtpl
 ```html
-<p>hello world</p>
+<p>{{ message }}</p>
 ```
 
 demo.js
@@ -72,24 +72,24 @@ The template data.
 
 Type: `string`
 
-#### strict
+##### strict
 
 Type: `boolean`
 
-#### catchError
+##### catchError
 
 Type: `boolean`
 
-#### cache
+##### cache
 
 Type: `boolean`
 
-#### encoding
+##### encoding
 
 Type: `string`<br>
 Default: `utf-8`
 
-### callback(err, result)
+#### callback(err, result)
 
 Type: `function`
 
