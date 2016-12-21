@@ -1,0 +1,36 @@
+{
+  "name": "node-xtemplate",
+  "version": "0.1.0",
+  "description": "A node.js wrapper around xtemplate engine",
+  "main": "lib",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/node-xtemplate.git"
+  },
+  "keywords": [
+    "xtemplate",
+    "xtpl",
+    "zce",
+    "iceStone",
+    "wedn",
+    "wedn.net",
+    "micua",
+    "micua.com"
+  ],
+  "author": "iceStone <ice@micua.com> (http://www.micua.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zce/node-xtemplate/issues"
+  },
+  "homepage": "https://github.com/zce/node-xtemplate#readme",
+  "dependencies": {
+    "iconv-lite": "^0.4.15",
+    "xtemplate": "^4.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
