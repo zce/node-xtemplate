@@ -1,14 +1,30 @@
-// var path = require('path')
-// var assert = require('assert')
-// var xTemplate = require('../')
+var path = require('path')
+var xTemplate = require('../')
 
-// describe('Basic', function () {
-//   it('should return `<p>hello world</p>` when the message is `hello world`', function () {
-//     xTemplate.render(path.resolve(__dirname, 'demo.xtpl'), {
-//       message: 'hello world'
-//     }, function (err, result) {
-//       // callback
-//       assert.equal('<p>hello world</p>', result)
-//     })
-//   })
-// })
+var viewname = path.resolve(__dirname, 'demo.xtpl')
+
+console.time('outer')
+xTemplate.render(viewname, { message: 'hello world' }, function (err, result) {
+  console.log(result)
+  // => `<p>hello world</p>`
+
+  console.time('inner')
+  xTemplate.render(viewname, { message: 'hello world' }, function (err, result) {
+    console.log(result)
+    // => `<p>hello world</p>`
+    console.timeEnd('inner')
+  })
+  console.timeEnd('outer')
+
+  console.time('promise')
+  xTemplate
+    .render(viewname, { message: 'hello world' })
+    .then(function (result) {
+      console.log(result)
+      console.timeEnd('promise')
+    })
+    .catch(function (error) {
+      console.log(error)
+      console.timeEnd('promise')
+    })
+})

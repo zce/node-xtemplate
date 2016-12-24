@@ -4,7 +4,7 @@
   "description": "A node.js wrapper around xtemplate engine",
   "main": "lib",
   "scripts": {
-    "test": "mocha"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/zce/node-xtemplate#readme",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "iconv-lite": "^0.4.15",
+    "object-assign": "^4.1.0",
     "xtemplate": "^4.6.0"
   },
   "devDependencies": {

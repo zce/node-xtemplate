@@ -40,13 +40,24 @@ demo.xtpl
 demo.js
 
 ```js
-const xTemplate = require('node-xtemplate');
+const xTemplate = require('node-xtemplate')
 
+// callback
 xTemplate.render(path.resolve(__dirname, 'demo.xtpl'), {
   message: 'hello world'
 }, function (err, result) {
-  // => <p>hello world</p>
+  // result => <p>hello world</p>
 })
+
+// or promise
+xTemplate
+  .render(path.resolve(__dirname, 'demo.xtpl'), { message: 'hello world' })
+  .then(function (result) {
+    // result => <p>hello world</p>
+  })
+  .catch(function (err) {
+    // if err
+  })
 ```
 
 
