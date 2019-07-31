@@ -146,10 +146,6 @@ es-to-primitive@^1.2.0:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-escape-html@~1.0.3:
-  version "1.0.3"
-  resolved "http://registry.npm.taobao.org/escape-html/download/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
-
 escape-string-regexp@1.0.5, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -636,11 +632,22 @@ wrappy@1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-xtemplate@^4.6.1:
-  version "4.6.1"
-  resolved "http://registry.npm.taobao.org/xtemplate/download/xtemplate-4.6.1.tgz#11bb4fe31e878bda0af9a139ab4d32fe0cffad3f"
+xtemplate-compiler@5.x:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/xtemplate-compiler/-/xtemplate-compiler-5.0.0.tgz#9c95a26b95ebd725b3bc56d3a70c56d151578cba"
   dependencies:
-    escape-html "~1.0.3"
+    xtemplate-runtime "5.x"
+
+xtemplate-runtime@5.x:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/xtemplate-runtime/-/xtemplate-runtime-5.0.0.tgz#d4a7db88a90749f1c70bc0dad4535bced2f6b785"
+
+xtemplate@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/xtemplate/-/xtemplate-5.0.0.tgz#ab531bb11a8ed18755f26fd7372cf34a5a883c25"
+  dependencies:
+    xtemplate-compiler "5.x"
+    xtemplate-runtime "5.x"
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.0"
