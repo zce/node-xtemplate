@@ -468,22 +468,23 @@ wrappy@1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-xtemplate-compiler@5.x:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/xtemplate-compiler/-/xtemplate-compiler-5.0.0.tgz#9c95a26b95ebd725b3bc56d3a70c56d151578cba"
-  dependencies:
-    xtemplate-runtime "5.x"
+xtemplate-compiler@^5.0.10:
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/xtemplate-compiler/-/xtemplate-compiler-5.0.10.tgz#c8cf4d94d0ec71d83ec23b7b8404ebc962613c8d"
+  integrity sha512-PyD8Jj825Bdd05LZjtKWORU13LHGsRu010hAqJh2s956GmwpANUsUYpjLOFkEviPfa4tazrxMIcdEAwkPPHlsw==
 
-xtemplate-runtime@5.x:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/xtemplate-runtime/-/xtemplate-runtime-5.0.0.tgz#d4a7db88a90749f1c70bc0dad4535bced2f6b785"
+xtemplate-runtime@^5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/xtemplate-runtime/-/xtemplate-runtime-5.0.8.tgz#8354362a942dc066afe0ed46c2b66896c9a97c9a"
+  integrity sha512-/6xC1djtAmHbAfsG1UUjv853M0L7oEf8H2XHZIkGFiWEVhYP+p7BZgEMeRPcNEOyq7Vwx65aJQwg4nnYedZkAw==
 
 xtemplate@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/xtemplate/-/xtemplate-5.0.0.tgz#ab531bb11a8ed18755f26fd7372cf34a5a883c25"
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/xtemplate/-/xtemplate-5.0.11.tgz#022dab2c639db537e4e51743256398039a043288"
+  integrity sha512-d0O/tuqEsX+wnOkHu9ed/YF5kUpRdb7uFdlZUtFCBQQH6YukLHmmjGUeUI2uBRjlVfjJOPEW18dnMgSzJWDzQA==
   dependencies:
-    xtemplate-compiler "5.x"
-    xtemplate-runtime "5.x"
+    xtemplate-compiler "^5.0.10"
+    xtemplate-runtime "^5.0.8"
 
 y18n@^4.0.0:
   version "4.0.0"
